@@ -1,0 +1,59 @@
+@CHARSET "ISO-8859-1";
+.navbar-nav li a:hover{
+     color:#00FFFF;
+}
+.admin .card{
+	border:1 px solid red;
+}
+.admin .card:hover{
+	background:#e2e2e2;
+	cursor:pointer;
+}
+.discount-label{
+	font-size:12px !important;
+	font-style:italic !important;
+}
+/*for toast*/
+#toast{
+	min-width:300px;
+	position:fixed;
+	bottom:25px;
+	left:50%;
+	margin-left:-120px;
+	padding:15px;
+	background:#FFA500;
+	color:white;
+	font-size:18px;
+	text-align:center;
+	z-index:1;
+	visibility:hidden;
+	box-shadow:0px,0px,100px,#FFD700;
+} 
+  /* for animation */
+@keyframes fadeIn{
+	from{
+	    bottom:0;
+	    opacity:0;
+	}
+	to{
+	    bottom:30px;
+	    opacity:1;
+	}
+}
+
+@keyframes fadeOut{
+	from{
+	  buttom:30px;
+	  opacity:1;
+	}
+	to{
+	  buttom:0;
+	  opacity:0;
+	}
+}
+  /* making the message visible and making this with help of javascript.. */
+#toast.display{
+	visibility:visible;
+	animation: fadeIn 5s, fadeOut 5s;
+}
+
